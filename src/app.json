@@ -1,11 +1,30 @@
 {
   "pages": [
-    "pages/index/main"
+    "pages/reference/main",
+    "pages/settings/main",
+    "pages/calculation/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "gpaCalculator",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position": "top",
+    "color": "#000000",
+    "selectedColor": "#dd2222",
+    "backgroundColor": "#eeeedd",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/reference/main",
+      "text": "说明"
+    }, {
+      "pagePath": "pages/settings/main",
+      "text": "设置"
+    }, {
+      "pagePath": "pages/calculation/main",
+      "text": "计算"
+    }]
   }
 }
