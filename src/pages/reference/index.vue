@@ -9,6 +9,7 @@
 export default {
   created () {
     // let app = getApp()
+    console.log(this.$store.state.test)
   }
 }
 </script>
