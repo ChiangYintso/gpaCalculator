@@ -1,24 +1,22 @@
 <template>
   <div>
-    <div class="welcome">欢迎使用gpaCalculator</div>
-    <div class="welcome">请首先设置参数</div>
-    <form>
-      <label>
-        <radio-group>
-          <span class="label">满绩：</span>
-          <radio class="radio" value="4">4.0</radio>
-          <radio class="radio" value="5">5.0</radio>
-        </radio-group>
-      </label>
-    </form>
+    <div>calculation</div>
+    <div class="input-box">
+      <input-box></input-box>
+    </div>
   </div>
 </template>
 
 <script>
+import inputBox from './components/inputBox'
 export default {
   data () {
     return {
     }
+  },
+
+  components: {
+    inputBox
   },
 
   methods: {
@@ -31,14 +29,12 @@ export default {
 </script>
 
 <style scoped>
-  .welcome {
-    text-align: center;
-  }
-  .label {
-    display: inline;
-    margin-left: 30rpx;
-  }
-  .radio {
-    margin: 15rpx;
+  .input-box {
+    position: absolute;
+    width: 100%;
+    height: 600rpx;
+    bottom: 0;
+    z-index: 200;
+    background-color: #01de33;
   }
 </style>
